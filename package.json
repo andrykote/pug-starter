@@ -1,0 +1,25 @@
+{
+  "name": "pug-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "concurrently --kill-others \"gulp\" \"http-server ./build -o\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmozheyko/pug-starter.git"
+  },
+  "author": "Alexey Mozheyko",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {}
+}
