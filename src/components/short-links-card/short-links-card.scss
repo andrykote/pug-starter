@@ -1,0 +1,41 @@
+.main-short_links-container {
+    width: var(--shortLink);
+    height: 100%;
+    padding: 0 20px;
+}
+
+.main-schort-links-heading {
+    font-family: var(--montserra);
+    font-size: 18px;
+    font-weight: 700;
+    margin:0 0 21px;
+}
+
+.main-short-link-block {
+    display: block;
+    padding: 17px 35px 22px 21px;
+    background-color: #F2F7F7;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: var(--openSans);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-short-link-block span:hover {
+    text-decoration: underline;
+}
+
+.short-link-block-comment-cont {
+    display: flex;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.comment-svg-cont {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+

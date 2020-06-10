@@ -1,0 +1,36 @@
+.profile-menu {
+    position:absolute;
+    width: 235px;
+    padding: 12px 0;
+    list-style: none;
+    border-radius: 10px;
+    bottom: -353px;
+    left: -140px;
+    background-color: #fff;
+}
+
+.profile-svg-container {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.profile-menu-element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.profile-menu-element:hover {
+    background-color: #e0d9d9;
+}

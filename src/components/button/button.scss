@@ -1,0 +1,42 @@
+.btn-unversal-style {
+    position: relative;
+    height: 50px;
+    border: none;
+    border-radius: 25px; 
+    font-family: var(--montserra);   
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.btn-unversal-style::before {
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    opacity: 0;
+    transition: opacity .1s ease-out;
+}
+
+.btn-unversal-style:hover::before {
+    opacity: 1;
+}
+
+.button-submit-text {
+    margin: 0 21px;
+    transition:  .5s cubic-bezier(.645,.045,.355,1); 
+}
+
+.left-arrow {
+    transform: scale(0);
+    transition:  .4s cubic-bezier(.755,.05,.855,.06);
+}
+.right-arrow {
+    transition: .4s cubic-bezier(.755,.05,.855,.06);
+}

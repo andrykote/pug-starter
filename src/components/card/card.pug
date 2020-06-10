@@ -1,0 +1,9 @@
+mixin card(name, bgColor, image)
+	a.card(href='http://#' target='_blank' style=`background-color: ${ bgColor }`)&attributes(attributes)
+		.card-background-image(style=`background-image: url('../assets/images/${ image }.png')`)
+		.card-dicr
+			p.card_name= name
+			.card-text_cont
+				+svgIcon('plus')
+				p.card_text  Abonnieren 
+				p.card_numb  43543 

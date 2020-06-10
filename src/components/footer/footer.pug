@@ -1,0 +1,53 @@
+footer
+	.footer-content
+		.footer-links
+			.footer-store
+				+button({bgc: '#E45B60', colorText: '#fff', width: '197px', text: 'Frage stellen', arrow: true })(class="footer-button")
+				.store_links
+					a.store-container(href='#')
+						.footer-svg-container
+							+svgIcon('appstore')
+						.store-text
+							span  Available on the 
+							p  App Store 
+					a.store-container(href='#')
+						.footer-svg-container
+							+svgIcon('google')
+						.store-text
+							span  Android App on 
+							p  Google Play
+			.footer_store_links-info-container
+				.footer-links-info
+					h3  Dein Konto 
+					a(href='#')  Profil 
+					a(href='#')  Einstellungen 
+					a(href='#')  Abmelden 
+				.footer-links-info
+					h3  Meinung.de 
+					a(href='#')  Startseite 
+					a(href='#')  Alle Themen 
+					a(href='#')  FAQ 
+					a(href='#')  Kontakt 
+				.footer-links-info
+					h3  Rechtliches 
+					a(href='#')  AGB 
+					a(href='#')  Datenschutz 
+					a(href='#')  Richtlinien 
+					a(href='#')  Impressum 
+		.footer_social-container
+			.footer_social-svg-cont
+				a.social-svg-cont(href='#')
+					+svgIcon('linkedin')
+				a.social-svg-cont(href='#')
+					+svgIcon('twitter')
+				a.social-svg-cont(href='#')
+					+svgIcon('facebook')
+				a.social-svg-cont(href='#')
+					+svgIcon('pinterest')
+				a.social-svg-cont(href='#')
+					+svgIcon('youtube')
+			p
+				| 2013-2019 &mdash; child.de. 
+				span  All rights reserved 
+			a.header-content-logo-link(href='#')
+				+svgIcon('logo')

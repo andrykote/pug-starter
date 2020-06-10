@@ -1,7 +1,56 @@
+include ../components/svg-icon/svgIcon
+include ../components/card/card
+include ../components/short-links-card/short-links-card
+include ../components/button/button
+
 doctype html
 html(lang="en")
 	head
-		title Index
+		link(rel="stylesheet", href="./css/style.min.css")
+		link(rel="stylesheet", href="./assets/icons/svg-symbols.css")
+		link(rel="stylesheet", href="./css/m.style.min.css" media="(max-width: 600px)")
+		link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap' rel='stylesheet')
+
+		title Child.de
 	
 	body
-		h1 Hello world
+		include ../components/header/header
+		
+		.mobile
+			input.header-form-input.search-mobile(type='text' placeholder='Search')
+			button.mobile_btn-close
+				+svgIcon('close-black')
+		main
+			.main-container
+				include ../components/menu/menu
+				.main-pictures-container
+					.main-search-container
+						h1.main-search-heading  Was interessiert Sie? 
+						.main-search-box
+							form.search-form
+								input.main-search-input(type='text' placeholder='Suche nach Thema')
+								+button({bgc: '#E45B60', colorText: '#FFF', width: '197px', arrow: 'false', text: 'Suche'})(class="main-search-button", type="submit")
+					.card_cont
+						+card('History', '#8cc761', 'history')(data-value='history')
+						+card('Games', '#E4955B', 'game')(data-value='games')
+						+card('Travel', '#70ACB4', 'travel')(data-value='travel')
+						+card('Food', '#F7AE3B', 'food')(data-value='food')
+						+card('Health', '#EB7465', 'health')(data-value='health')
+						+card('Films', '#A461C7', 'films')(data-value='films')
+						+card('Family', '#65ADEB', 'family')(data-value='family')
+						+card('Internet', '#F7AE3B', 'internet')(data-value='internet')
+						+card('Mobile', '#320032', 'mobile')(data-value='mobile')
+						+card('Forest', '#67d868', 'forest')(data-value='forest')
+				.main-short_links-container
+					h3.main-schort-links-heading  We are read 
+					+shortLink('Technological competition startups. Provides IT industry promising technologies.')
+					+shortLink('Cloud provider. It supports us in all endeavors, but often draws us into adventures.')
+					+shortLink('Optimization for newbies: html tags and attributes in SEO')
+
+		include ../components/question-block/question-block
+
+		include ../components/footer/footer
+
+		script(src="./js/script.min.js")
+			

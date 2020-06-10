@@ -1,0 +1,40 @@
+footer {
+  display: none; }
+
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  height: 270px;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.header {
+  height: 80px;
+  padding: 0 12px; }
+
+.header-content {
+  width: 100%;
+  padding: 0; }
+
+.search-white {
+  display: block;
+  cursor: pointer; }
+
+.search-icon {
+  display: block;
+  cursor: pointer;
+  fill: #fff;
+  margin-right: 22px; }
+
+.header-form {
+  display: none; }
+
+.profile-bell {
+  margin-left: 22px; }
+
+.main-menu-container {
+  display: none; }
+
+.profile-menu {
+  z-index: 1; }

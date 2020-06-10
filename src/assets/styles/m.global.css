@@ -1,0 +1,47 @@
+.main-container, .main-search-heading, .main-pictures-container {
+    width: 100%;
+}
+
+.main-container {
+    padding: 50px 12px 40px;
+}
+
+.main-pictures-container {
+    padding: 0;
+}
+
+.main-search-box {
+    margin: 0;
+}
+
+.main-search-button {
+    width: 170px;
+}
+
+.main-short_links-container {
+    display: none;
+}
+
+.mobile {
+    display: none;
+    position: relative;
+    margin-top: 30px;
+}
+
+.search-mobile {
+    background-color: #F1F4F6;
+}
+
+.mobile_btn-close {
+    position: absolute;
+    right: 25px;
+    top: 16px; 
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nvisible {
+    display: block;
+}

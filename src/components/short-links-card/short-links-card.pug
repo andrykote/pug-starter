@@ -1,0 +1,7 @@
+mixin shortLink(cardText)
+	a.main-short-link-block(href='javascript:void(0)')
+		span= cardText
+		.short-link-block-comment-cont
+			.comment-svg-cont
+				+svgIcon('comments')
+			span.comment-amount  365

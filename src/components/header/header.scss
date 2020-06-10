@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #67C7BC;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1264px;
+    padding: 0 40px;
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.header-content-logo-link, .bell-pointer {
+    cursor: pointer;
+}
+
+.header-content-logo-link:active {
+    opacity: .6;
+}
+
+.header-user-profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.profile-bell {
+    cursor: pointer;
+}
+
+.profile-picture {
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.search-white {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    .header-content {
+        width: 1024px;
+        margin: auto;
+    }
+}

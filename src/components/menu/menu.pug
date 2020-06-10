@@ -1,0 +1,47 @@
+.main-menu-container
+	ul.main-menu-list
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('feed')
+				span.menu-list-element-text  Feed 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('profile')
+				span.menu-list-element-text  Profil 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('neu')
+				span.menu-list-element-text  Neu 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('antworten')
+				span.menu-list-element-text  Anworten 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('top')
+				span.menu-list-element-text  Top 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('themen')
+				span.menu-list-element-text  Themen 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('bewertung')
+				span.menu-list-element-text  Bewertung 
+		li
+			a.main-menu-list-element(href='http://#' target='_blank')
+				.menu-svg-container
+					+svgIcon('community')
+				span.menu-list-element-text  Community 
+		+button({bgc: '#282A2D', colorText: '#FFF', width: '171px', arrow: 'false', text: 'Frage stellen'})(class="main-menu-list-button")
+		button.main-menu-list-button-little(type='submit')
+			.list-svg-container.menu-svg-container
+				+svgIcon('frage')
+			

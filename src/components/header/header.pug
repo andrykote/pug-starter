@@ -1,0 +1,10 @@
+header(class='header')
+	.header-content
+		a(class="header-content-logo-link" href="#")
+			+svgIcon('logo')
+		include ../header-search/header-search
+		.header-user-profile-container
+			+svgIcon('search-white')(class='search-icon')
+			+svgIcon('notification-bell')(class='bell-pointer')
+			img.profile-picture(src='./assets/images/girl-png-header.png' alt='profile-picture')
+			include ../profile-menu/profile-menu

@@ -1,0 +1,115 @@
+.main-menu-container {
+    width: var(--menuContainer);
+    height: 100%;
+
+}
+
+.main-menu-list {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #282A2D;
+}
+
+.main-menu-list-element {
+    display: flex;
+    align-items: center;
+    width: 171px;
+    padding-left: 8px;
+    border-radius: 25px;
+}
+
+.main-menu-list-element:hover {
+    background-color: #e0d9d9;
+}
+
+.main-menu-list-element:active {
+    transform: scale(.95);
+}
+
+.menu-svg-container {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 8px;
+}
+
+
+
+.list-svg-container {
+    display: none;
+    margin: 0;
+}
+
+.main-menu-list-button {
+    margin-top: 10px;
+}
+
+.main-menu-list-button-little {
+    display: none;
+}
+.main-menu-list-button:active {
+    transform: scale(.95);
+
+}
+
+@media (max-width: 1279px) {
+
+
+    .main-menu-container {
+        width: 72px;
+        padding-right: 20px;
+        padding-left: 8px;
+    }
+    .menu-list-element-text {
+        display: none;
+    }
+
+    .main-menu-list-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+    }
+
+    .main-menu-list-element:hover {
+        background-color: #e0d9d9;
+    }
+    
+    .main-menu-list-button, .list-button-text {
+        display: none;
+    }
+    
+    .main-menu-list-button-little {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+        border-radius: 22px;
+        background-color: #282a2d;
+    }
+
+    .main-menu-list-button-little:hover {
+        background-color: #282a2de0;
+    }
+
+    .list-svg-container {
+        display: flex;
+        fill: #FFF;
+    }
+}

@@ -1,0 +1,8 @@
+mixin button({bgc, colorText, width, text, arrow})
+		if arrow == true
+			button.btn-unversal-style&attributes(attributes)(type='submit' style=`background-color:${ bgc }; color:${ colorText }; width:${ width }`)
+				+svgIcon('arrow')(class='left-arrow' style=`fill:${ colorText }`)
+				span.button-submit-text= text 
+				+svgIcon('arrow')(class='right-arrow' style=`fill:${ colorText }`)
+		else
+			button.btn-unversal-style&attributes(attributes)(type='submit' style=`background-color:${ bgc }; color:${ colorText }; width:${ width }`)= text 
